@@ -4,6 +4,7 @@ metadata:
   name: kotlin-backend
   annotations:
     github.com/project-slug: dcheung-gocity/kotlin-backend
+    circleci.com/project-slug: github/dcheung-gocity/kotlin-backend
 spec:
   type: service
   lifecycle: experimental
