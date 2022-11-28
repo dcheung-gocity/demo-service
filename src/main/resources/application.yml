@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: demo-service
+  main:
+    allow-bean-definition-overriding: true
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/kotlin-demo-db
+      uuid-representation: standard
+server:
+  servlet:
+    context-path: /kotlin-demo
+  shutdown: graceful
