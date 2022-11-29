@@ -7,6 +7,7 @@ spec:
   type: openapi
   lifecycle: experimental
   owner: team-a
+  system: kotlin-demo
   definition: |
     openapi: 3.0.1
     info:
