@@ -5,9 +5,14 @@ spring:
     allow-bean-definition-overriding: true
   data:
     mongodb:
-      uri: mongodb://localhost:27017/kotlin-demo-db
+      uri: mongodb://192.168.205.5:27017/kotlin-demo-db
       uuid-representation: standard
 server:
   servlet:
     context-path: /kotlin-demo
   shutdown: graceful
+
+logging:
+  level:
+    web: TRACE
+    org.springframework.web: TRACE

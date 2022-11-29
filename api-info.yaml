@@ -1,0 +1,88 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: kotlin-demo-api
+  description: Kotlin Demo API
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: guests
+  system: kotlin-demo-system
+  definition: |
+    openapi: 3.0.1
+    info:
+      title: OpenAPI definition
+      version: v0
+    servers:
+    - url: http://localhost:8080/kotlin-demo
+      description: Generated server url
+    paths:
+      "/test":
+        get:
+          tags:
+          - demo-controller
+          operationId: get
+          parameters:
+          - name: text
+            in: query
+            required: true
+            schema:
+              type: string
+          responses:
+            '200':
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    "$ref": "#/components/schemas/DemoResponse"
+        post:
+          tags:
+          - demo-controller
+          operationId: post
+          requestBody:
+            content:
+              application/json:
+                schema:
+                  "$ref": "#/components/schemas/DemoRequest"
+            required: true
+          responses:
+            '200':
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    "$ref": "#/components/schemas/DemoResponse"
+      "/test/all":
+        get:
+          tags:
+          - demo-controller
+          operationId: getAll
+          responses:
+            '200':
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    type: array
+                    items:
+                      "$ref": "#/components/schemas/DemoResponse"
+    components:
+      schemas:
+        DemoRequest:
+          required:
+          - text
+          type: object
+          properties:
+            text:
+              type: string
+        DemoResponse:
+          required:
+          - id
+          - text
+          type: object
+          properties:
+            id:
+              type: string
+              format: uuid
+            text:
+              type: string
