@@ -9,3 +9,5 @@ spec:
   type: service
   lifecycle: experimental
   owner: guests
+  providesApis:
+    - kotlin-demo-api
