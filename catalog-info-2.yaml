@@ -14,5 +14,5 @@ spec:
   lifecycle: experimental
   owner: team-a
   system: kotlin-demo
-  comsumersApis:
+  consumesApis:
     - kotlin-demo-api
