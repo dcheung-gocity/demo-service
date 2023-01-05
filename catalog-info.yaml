@@ -12,7 +12,7 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: team-a
+  owner: guest
   system: kotlin-demo
   providesApis:
     - kotlin-demo-api
