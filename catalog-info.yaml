@@ -15,4 +15,4 @@ spec:
   owner: team-a
   system: kotlin-demo
   providesApis:
-    - kotlin-demo-api
+    - demo-api
