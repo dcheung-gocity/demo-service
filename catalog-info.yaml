@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: kotlin-backend
+  name: kotlin-backend-test
   links:
   - url: https://github.com/dcheung-gocity/kotlin-backend
     title: GitHub Repo
