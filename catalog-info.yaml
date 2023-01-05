@@ -3,11 +3,11 @@ kind: Component
 metadata:
   name: demo-service
   links:
-  - url: https://github.com/dcheung-gocity/kotlin-backend
+  - url: https://github.com/dcheung-gocity/demo-service
     title: GitHub Repo
     icon: github
   annotations:
-    github.com/project-slug: dcheung-gocity/kotlin-backend
+    github.com/project-slug: dcheung-gocity/demo-service
     circleci.com/project-slug: github/dcheung-gocity/kotlin-backend
 spec:
   type: service
